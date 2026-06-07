@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colombia 5.0 – Tech Event</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-co">CO</span><span class="brand-lombia">LOMBIA</span>
+      <span class="brand-version">5.0</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"        class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#conferences" class="nav-link"><i class="fa-solid fa-microphone"></i> Conferences</a></li>
+      <li><a href="#topics"      class="nav-link"><i class="fa-solid fa-brain"></i> Topics</a></li>
+      <li><a href="#gallery"     class="nav-link"><i class="fa-solid fa-images"></i> Gallery</a></li>
+      <li><a href="#glossary"    class="nav-link"><i class="fa-solid fa-book"></i> Glossary</a></li>
+      <li><a href="#conclusion"  class="nav-link"><i class="fa-solid fa-pen-nib"></i> Conclusion</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==================== HOME ==================== -->
+  <section class="hero" id="home">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow"><i class="fa-solid fa-satellite-dish"></i> SENA · Bogota · 2026</p>
+      <h1 class="hero-title">
+        <span class="title-line">COLOMBIA</span>
+        <span class="title-version">5.0</span>
+      </h1>
+      <p class="hero-subtitle">Innovation and Digital Transformation Event</p>
+      <p class="hero-desc">
+        Colombia 5.0 is a national technology event where experts, entrepreneurs and companies
+        come together to talk about the future of artificial intelligence, cybersecurity,
+        automation and the digital economy. This website was made as an academic project
+        for the <strong>Software Analysis and Development program at SENA.</strong>
+      </p>
+      <div class="hero-objective">
+        <span class="obj-label"><i class="fa-solid fa-bullseye"></i> OBJECTIVE</span>
+        <p>The goal of this site is to share what I learned at Colombia 5.0, including
+        summaries of the conferences I attended, a technical glossary and my personal
+        reflection about technology and ethics.</p>
+      </div>
+      <div class="hero-cta">
+        <a href="#conferences" class="btn-primary">See Conferences <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#topics"      class="btn-ghost">Explore Topics</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <span class="stat-number" data-target="20">0</span><span class="stat-sign">+</span>
+        <span class="stat-label">Conferences</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="5000">0</span><span class="stat-sign">+</span>
+        <span class="stat-label">Attendees</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="8">0</span><span class="stat-sign"></span>
+        <span class="stat-label">Key Topics</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONFERENCES ==================== -->
+  <section class="section" id="conferences">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CONFERENCES</span>
+        <h2 class="section-title">Talks I Attended</h2>
+        <p class="section-subtitle">These are the two conferences I went to at Colombia 5.0. Both were really interesting and I learned a lot from them.</p>
+      </div>
+
+      <!-- ===== CONFERENCE 1 ===== -->
+      <article class="conference-card" id="conf1">
+        <div class="conf-badge">01</div>
+        <div class="conf-header">
+          <div class="conf-meta">
+            <span class="conf-tag"><i class="fa-solid fa-gamepad"></i> Video Game Design · Game UI</span>
+            <h3 class="conf-title">Game UI Systems: From Pretty Screens to Interfaces That Actually Work</h3>
+            <p class="conf-speaker">
+              <i class="fa-solid fa-user-tie"></i>
+              <strong>Speaker:</strong> Andres Felipe Pisso Tobar —
+              Lead UX Designer at Teravision Games · Bogota, Colombia 5.0
+            </p>
+          </div>
+        </div>
+        <div class="conf-body">
+          <div class="conf-text active">
+            <h4><i class="fa-solid fa-align-left"></i> Summary</h4>
+            <p>
+              This was one of the most practical talks of the whole event. Andres Pisso Tobar, who
+              works as Lead UX Designer at Teravision Games, gave a hands-on workshop about how to
+              design UI systems for video games. The main idea he was trying to explain is that
+              making a good game interface is not just about making it look nice — it's about
+              building a <strong>system with clear rules, reusable components and different states</strong>
+              that can be used consistently across the whole game.
+            </p>
+            <p>
+              He started with something that really caught my attention: <em>"A UI can look good
+              and still not work."</em> He explained that the problem is not always having too
+              much stuff on screen. A lot of times the real problem is that nobody defined the
+              rules for what should appear, when it should appear and how it should behave.
+              When there is no system, every new screen has to be built from scratch and that
+              creates a lot of inconsistency and extra work for the team.
+            </p>
+            <p>
+              During the workshop we built a mini Game UI base in Figma by following 5 steps:
+            </p>
+            <ul class="conf-steps">
+              <li><span class="step-num">01</span> <strong>Define visual rules</strong> — colors, fonts, spacing and text hierarchy.</li>
+              <li><span class="step-num">02</span> <strong>Create reusable components</strong> — HUD Stats, Action Prompts and Gameplay Toasts.</li>
+              <li><span class="step-num">03</span> <strong>Design state variants</strong> — Normal, Warning, Critical, Reward and Unavailable.</li>
+              <li><span class="step-num">04</span> <strong>Apply the system to a full screen</strong> — build a complete HUD using the components.</li>
+              <li><span class="step-num">05</span> <strong>Test with the 3-Second Test</strong> — check if the UI makes sense without any explanation.</li>
+            </ul>
+            <p>
+              At the end he made a point that I think applies to all areas of development, not
+              just games: the difference between someone who just makes pretty screens and
+              someone who builds real systems is the discipline to create clear rules first.
+              In a real game studio, having a good design system means you can iterate fast
+              instead of getting stuck fixing the same inconsistency problems over and over.
+            </p>
+          </div>
+
+          <div class="conf-keywords">
+            <span class="kw-label"><i class="fa-solid fa-tags"></i> Keywords:</span>
+            <span class="kw">Game UI Systems</span>
+            <span class="kw">UX Design</span>
+            <span class="kw">HUD</span>
+            <span class="kw">Design System</span>
+            <span class="kw">Figma</span>
+            <span class="kw">Components</span>
+            <span class="kw">3-Second Test</span>
+            <span class="kw">Gameplay Toast</span>
+            <span class="kw">Teravision Games</span>
+            <span class="kw">State Variants</span>
+          </div>
+
+          <div class="conf-gallery-section">
+            <h4><i class="fa-solid fa-images"></i> Photos from the Workshop — Colombia 5.0</h4>
+            <div class="conf-photo-grid">
+              <div class="conf-photo-item">
+                <img src="img_conf1_01.jpeg" alt="Andres Pisso Tobar presenting at Colombia 5.0" loading="lazy" />
+                <span class="photo-caption">Andres Felipe Pisso Tobar — Lead UX Designer, Teravision Games</span>
+              </div>
+              <div class="conf-photo-item">
+                <img src="img_conf1_02.jpeg" alt="Game UI Systems opening slide" loading="lazy" />
+                <span class="photo-caption">Title slide: Game UI Systems — From Pretty Screens to Interfaces That Work</span>
+              </div>
+              <div class="conf-photo-item">
+                <img src="img_conf1_03.jpeg" alt="A UI can look good and still not work" loading="lazy" />
+                <span class="photo-caption">"A UI can look good and still not work" — key slide of the talk</span>
+              </div>
+              <div class="conf-photo-item">
+                <img src="img_conf1_04.jpeg" alt="The system has to work for the player and the team" loading="lazy" />
+                <span class="photo-caption">A Game UI system has to serve both the player and the development team</span>
+              </div>
+              <div class="conf-photo-item">
+                <img src="img_conf1_05.jpeg" alt="Building the mini Game UI base in Figma" loading="lazy" />
+                <span class="photo-caption">Building the mini Game UI base — the 5 methodological steps</span>
+              </div>
+              <div class="conf-photo-item">
+                <img src="img_conf1_06.jpeg" alt="Foundations and Components slide" loading="lazy" />
+                <span class="photo-caption">System foundations: color palette, typography, spacing scale and hierarchy</span>
+              </div>
+              <div class="conf-photo-item conf-photo-item--wide">
+                <img src="img_conf1_07.jpeg" alt="Figma Game UI System Workshop Colombia 5.0" loading="lazy" />
+                <span class="photo-caption">The Figma file we worked on: colors, Rajdhani font, components and notification states</span>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </article>
+
+      <!-- ===== CONFERENCE 2 ===== -->
+      <article class="conference-card" id="conf2">
+        <div class="conf-badge">02</div>
+        <div class="conf-header">
+          <div class="conf-meta">
+            <span class="conf-tag"><i class="fa-solid fa-shield-halved"></i> Cybersecurity · Critical Infrastructure · Ericsson</span>
+            <h3 class="conf-title">Protection of Critical Digital Infrastructure: Network Governance and Cybersecurity for National Sovereignty</h3>
+            <p class="conf-speaker">
+              <i class="fa-solid fa-user-tie"></i>
+              <strong>Speaker:</strong> Eng. Yanis Stovanel —
+              Customer Security Manager at Ericsson · Bogota, May 8th 2026
+            </p>
+          </div>
+        </div>
+        <div class="conf-body">
+          <div class="conf-text active">
+            <h4><i class="fa-solid fa-align-left"></i> Summary</h4>
+            <p>
+              This conference was presented by engineer Yanis Stovanel, who works as Customer
+              Security Manager at Ericsson. Her talk was about a topic that I think is really
+              important and that most people don't pay enough attention to: protecting the critical
+              digital infrastructure of a country. She called this the <em>"Critical Infrastructure
+              Scenario"</em> and explained how cyberattacks on systems like telecommunications
+              networks, power grids, water systems and financial platforms can literally bring a
+              whole country to a stop.
+            </p>
+            <p>
+              She organized the talk around five key questions that every cybersecurity strategy
+              should answer: <strong>Why do they attack? Who is attacking? How do they attack?
+              What are the consequences? And how will we be attacked in the future?</strong>
+              She defined vulnerabilities as flaws or weaknesses in systems, software, networks
+              or processes that attackers can use to compromise security.
+            </p>
+            <p>
+              The numbers she showed were really alarming. According to the
+              <strong>KEV Catalog (Known Exploited Vulnerabilities)</strong> from CISA,
+              there are about <strong>327,000 documented vulnerabilities</strong> and around
+              1,500 of them are being actively exploited right now. Between
+              <strong>8 and 10% of those affect industrial technologies</strong> and active
+              exploitation went up by <strong>+20% in 2025</strong>. About
+              <strong>40% of all vulnerabilities are classified as High Impact</strong>
+              according to the CVSS scoring system.
+            </p>
+            <p>
+              She also talked about the three main cyber threat groups that specifically target
+              global telecommunications:
+            </p>
+            <ul class="conf-steps">
+              <li><span class="step-num">01</span> <strong>Salt Typhoon</strong> — Active since 2020, this is a state-linked group focused on espionage and stealing information by intercepting network traffic. Mainly operates in South America and Southeast Asia.</li>
+              <li><span class="step-num">02</span> <strong>Liminal Panda</strong> — Has attacked telecom organizations using custom tools and deep knowledge of network interconnections. Active in Africa and North America.</li>
+              <li><span class="step-num">03</span> <strong>Tracer Kitten</strong> — Focused on intelligence operations against telecom companies. Has been detected in Europe, Africa and the Middle East.</li>
+            </ul>
+            <p>
+              She also showed us something that was pretty scary: the <strong>Cyberattack
+              Ecosystem</strong>. It's basically a full criminal business chain that goes from
+              Initial Access Brokers (people who sell access to hacked systems) all the way to
+              Money Laundering. In the middle you have things like Malware Operators and
+              Ransomware as a Service (RaaS) — which means criminals can now basically
+              rent malware like a subscription service.
+            </p>
+            <p>
+              The last part of her talk was about <strong>Agentic AI</strong> — AI systems
+              that act autonomously, make their own decisions and can carry out complex tasks
+              without human supervision. She explained that this is enabling a new generation
+              of threats like Autonomous Hacking Agents, Polymorphic Malware and Automated
+              Vulnerability Exploitation. Basically, AI is now being used as a weapon.
+            </p>
+            <p>
+              Her conclusion was clear: cybersecurity can't just be a technical department
+              anymore. It has to become a <strong>proactive governance strategy</strong> at
+              the highest levels of government and business. Protecting a country's networks
+              is not just a technical challenge — it is a matter of
+              <strong>national sovereignty</strong>.
+            </p>
+          </div>
+
+          <div class="conf-keywords">
+            <span class="kw-label"><i class="fa-solid fa-tags"></i> Keywords:</span>
+            <span class="kw">Critical Infrastructure</span>
+            <span class="kw">Cybersecurity</span>
+            <span class="kw">Ericsson</span>
+            <span class="kw">Vulnerabilities</span>
+            <span class="kw">KEV Catalog</span>
+            <span class="kw">CVSS</span>
+            <span class="kw">Salt Typhoon</span>
+            <span class="kw">Agentic AI</span>
+            <span class="kw">RaaS</span>
+            <span class="kw">National Sovereignty</span>
+            <span class="kw">Network Governance</span>
+          </div>
+
+          <div class="conf-gallery-section">
+            <h4><i class="fa-solid fa-images"></i> Photos from the Conference — Colombia 5.0</h4>
+            <div class="conf-photo-grid">
+              <div class="conf-photo-item conf-photo-item--wide">
+                <img src="imagen_1.jpeg" alt="Eng. Yanis Stovanel opening slide at Colombia 5.0" loading="lazy" />
+                <span class="photo-caption">Eng. Yanis Stovanel — Ericsson · Protection of Critical Digital Infrastructure · Bogota, May 8th 2026</span>
+              </div>
+              <div class="conf-photo-item">
+                <img src="imagen_2.jpeg" alt="Cyber adversaries — Salt Typhoon, Liminal Panda, Tracer Kitten" loading="lazy" />
+                <span class="photo-caption">The three main threat groups targeting global telecommunications</span>
+              </div>
+              <div class="conf-photo-item">
+                <img src="imagen_3.jpeg" alt="CVSS statistics and KEV Catalog data" loading="lazy" />
+                <span class="photo-caption">~327K documented vulnerabilities · 40% High Impact · +20% active exploitation in 2025</span>
+              </div>
+              <div class="conf-photo-item">
+                <img src="imagen_4.jpeg" alt="Agentic AI — Autonomous Hacking Agents slide" loading="lazy" />
+                <span class="photo-caption">Agentic AI as a new threat: Autonomous Hacking Agents, Polymorphic Malware and Automated Exploitation</span>
+              </div>
+              <div class="conf-photo-item">
+                <img src="imagen_5.jpeg" alt="Current telecom threat landscape" loading="lazy" />
+                <span class="photo-caption">Current threats in telecom networks: IAB Brokers, LOTL tools, low and slow infiltration, 5G attack surface</span>
+              </div>
+              <div class="conf-photo-item">
+                <img src="imagen_6.jpeg" alt="Cyberattack ecosystem from access brokers to money laundering" loading="lazy" />
+                <span class="photo-caption">The Cyberattack Ecosystem: Entry → Training → Extortion and Monetization (RaaS)</span>
+              </div>
+            </div>
+          </div>
+
+
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ==================== TOPICS ==================== -->
+  <section class="section section-dark" id="topics">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TOPICS COVERED</span>
+        <h2 class="section-title">Main Topics</h2>
+        <p class="section-subtitle">These are the most important technology topics that were discussed during Colombia 5.0.</p>
+      </div>
+      <div class="topics-grid">
+
+        <div class="topic-card">
+          <div class="topic-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>Artificial Intelligence</h3>
+          <p>AI is the field of computer science that focuses on making machines capable of learning, reasoning and making decisions. In business, AI is used to automate complex tasks, analyze huge amounts of data and improve customer experiences.</p>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+          <h3>Digital Transformation</h3>
+          <p>Digital transformation is the process of using technology to change the way a company operates and delivers value to its customers. It is not just about technology — it also requires changes in culture and business strategy.</p>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Big Data</h3>
+          <p>Big Data refers to very large sets of data that are too complex to be processed with traditional tools. When used correctly, big data analysis helps companies make better decisions based on real evidence instead of guesses.</p>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon"><i class="fa-solid fa-cloud"></i></div>
+          <h3>Cloud Computing</h3>
+          <p>Cloud computing means accessing computing services like servers, storage and databases over the internet instead of having physical hardware. Companies use it to scale faster, reduce costs and keep their services available all the time.</p>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Cybersecurity</h3>
+          <p>Cybersecurity is the practice of protecting systems, networks and data from digital attacks. In the modern world, especially after what we heard at Colombia 5.0, cybersecurity is a strategic priority that affects national sovereignty, not just businesses.</p>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon"><i class="fa-solid fa-gears"></i></div>
+          <h3>Automation</h3>
+          <p>Automation means using technology to perform tasks with minimal human involvement. Tools like Robotic Process Automation (RPA) free up workers from repetitive tasks so they can focus on more creative and valuable work.</p>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+          <h3>Critical Infrastructure</h3>
+          <p>Critical infrastructure includes the essential systems of a country like telecom networks, electricity, water supply and banking. As we learned from the Ericsson conference, protecting these systems from cyberattacks is one of the biggest challenges right now.</p>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon"><i class="fa-solid fa-gamepad"></i></div>
+          <h3>Game UI Design</h3>
+          <p>Game UI design is about creating the visual interface that players interact with in a video game. As the workshop showed us, good game UI is not just about looking cool — it requires a proper design system with clear rules, reusable components and multiple states.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY ==================== -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">GALLERY</span>
+        <h2 class="section-title">Event Photos</h2>
+        <p class="section-subtitle">These photos were taken during the two conferences I attended at Colombia 5.0, Bogota 2026.</p>
+      </div>
+
+      <p class="gallery-subtitle"><i class="fa-solid fa-gamepad"></i> Conference 1 — Game UI Systems · Andres Pisso Tobar · Teravision Games</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" style="--delay:0.1s">
+          <img src="img_conf1_01.jpeg" alt="Andres Pisso presenting at Colombia 5.0" loading="lazy" />
+          <div class="gallery-overlay"><span>Andres Pisso — Teravision Games</span></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.15s">
+          <img src="img_conf1_02.jpeg" alt="Game UI Systems workshop" loading="lazy" />
+          <div class="gallery-overlay"><span>Game UI Systems Workshop</span></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.2s">
+          <img src="img_conf1_03.jpeg" alt="UI can look good and still not work" loading="lazy" />
+          <div class="gallery-overlay"><span>Pretty UI vs Functional UI</span></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.25s">
+          <img src="img_conf1_04.jpeg" alt="Game UI for player and team" loading="lazy" />
+          <div class="gallery-overlay"><span>System for Player and Team</span></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.3s">
+          <img src="img_conf1_05.jpeg" alt="Mini Game UI base in Figma" loading="lazy" />
+          <div class="gallery-overlay"><span>Building the Mini Game UI</span></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.35s">
+          <img src="img_conf1_06.jpeg" alt="Foundations and components" loading="lazy" />
+          <div class="gallery-overlay"><span>Foundations and Components</span></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.4s">
+          <img src="img_conf1_07.jpeg" alt="Figma design system" loading="lazy" />
+          <div class="gallery-overlay"><span>Design System in Figma</span></div>
+        </div>
+      </div>
+
+      <p class="gallery-subtitle" style="margin-top:3rem"><i class="fa-solid fa-shield-halved"></i> Conference 2 — Critical Infrastructure · Eng. Yanis Stovanel · Ericsson</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" style="--delay:0.1s">
+          <img src="imagen_1.jpeg" alt="Eng. Yanis Stovanel opening presentation" loading="lazy" />
+          <div class="gallery-overlay"><span>Eng. Yanis Stovanel — Ericsson</span></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.15s">
+          <img src="imagen_2.jpeg" alt="Cyber adversary groups slide" loading="lazy" />
+          <div class="gallery-overlay"><span>Cyber Adversary Groups</span></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.2s">
+          <img src="imagen_3.jpeg" alt="Vulnerability statistics and KEV Catalog" loading="lazy" />
+          <div class="gallery-overlay"><span>Vulnerabilities and KEV Catalog</span></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.25s">
+          <img src="imagen_4.jpeg" alt="Agentic AI and autonomous hacking" loading="lazy" />
+          <div class="gallery-overlay"><span>Agentic AI and Autonomous Hacking</span></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.3s">
+          <img src="imagen_5.jpeg" alt="Telecom threat landscape 5G" loading="lazy" />
+          <div class="gallery-overlay"><span>Telecom Threats — 5G Surface</span></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.35s">
+          <img src="imagen_6.jpeg" alt="Cyberattack ecosystem RaaS" loading="lazy" />
+          <div class="gallery-overlay"><span>Cyberattack Ecosystem — RaaS</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GLOSSARY ==================== -->
+  <section class="section section-dark" id="glossary">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TECHNICAL GLOSSARY</span>
+        <h2 class="section-title">Glossary</h2>
+        <p class="section-subtitle">30 technical terms I learned at Colombia 5.0 — 15 from each conference, with Spanish translation and definition.</p>
+      </div>
+
+      <div class="glossary-search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="glossarySearch" placeholder="Search a term..." oninput="filterGlossary()" />
+      </div>
+
+      <!-- PART 1 — GAME UI SYSTEMS -->
+      <div class="glossary-part-header">
+        <i class="fa-solid fa-gamepad"></i>
+        Part 1 — Conference 1: Game UI Systems (Andres Pisso Tobar · Teravision Games)
+      </div>
+      <div class="table-wrapper" style="margin-bottom:2.5rem">
+        <table class="glossary-table" id="glossaryTable1">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th><i class="fa-solid fa-flag-usa"></i> English Term</th>
+              <th><i class="fa-solid fa-language"></i> Spanish Translation</th>
+              <th><i class="fa-solid fa-circle-info"></i> Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Game UI System</td><td>Sistema de UI para Juegos</td><td>A structured set of visual rules, reusable components and states that define how the interface of a video game looks and behaves consistently across all screens.</td></tr>
+            <tr><td>2</td><td>HUD (Heads-Up Display)</td><td>Pantalla de Informacion en Juego</td><td>The layer of on-screen elements like health bars, ammo counters and minimaps that gives the player real-time information during gameplay.</td></tr>
+            <tr><td>3</td><td>Design System</td><td>Sistema de Diseno</td><td>A collection of reusable components guided by clear rules and standards, used to build digital products consistently and efficiently.</td></tr>
+            <tr><td>4</td><td>Component</td><td>Componente</td><td>A self-contained, reusable UI building block like a button, health bar or notification that keeps the same behavior on every screen it appears.</td></tr>
+            <tr><td>5</td><td>Gameplay Toast</td><td>Notificacion de Juego</td><td>A short on-screen notification that pops up temporarily to inform the player about something that just happened, like getting a reward or a warning.</td></tr>
+            <tr><td>6</td><td>Action Prompt</td><td>Indicador de Accion</td><td>A UI element that tells the player what action they can perform at a given moment, for example "Press X to interact" or "Hold B to reload".</td></tr>
+            <tr><td>7</td><td>State Variant</td><td>Variante de Estado</td><td>A version of a component that looks different depending on the current situation: Normal, Warning, Critical, Reward or Unavailable.</td></tr>
+            <tr><td>8</td><td>3-Second Test</td><td>Test de 3 Segundos</td><td>A usability method used to check if a UI screen can be understood in 3 seconds without any explanation. If it can't, it needs to be redesigned.</td></tr>
+            <tr><td>9</td><td>Foundations</td><td>Fundamentos del Sistema</td><td>The base rules of a design system including the color palette, typography, spacing scale and text hierarchy that everything else is built on top of.</td></tr>
+            <tr><td>10</td><td>Visual Hierarchy</td><td>Jerarquia Visual</td><td>The way UI elements are organized by importance so the player's eye naturally goes to the most critical information first.</td></tr>
+            <tr><td>11</td><td>UX Design</td><td>Diseno de Experiencia de Usuario</td><td>The practice of designing digital products by focusing on how users interact with them and whether the experience feels smooth and intuitive.</td></tr>
+            <tr><td>12</td><td>Prototype</td><td>Prototipo</td><td>An interactive model of a design that lets you test how it works and how users move through it before actual development begins.</td></tr>
+            <tr><td>13</td><td>Visual Feedback</td><td>Retroalimentacion Visual</td><td>The visual or audio response that the game gives the player after they do something, letting them know whether the action worked or not.</td></tr>
+            <tr><td>14</td><td>Figma</td><td>Figma</td><td>A cloud-based design tool used to create UI designs, interactive prototypes and collaborative design systems in real time.</td></tr>
+            <tr><td>15</td><td>Spacing Scale</td><td>Escala de Espaciado</td><td>A set of predefined spacing values like 4, 16, 24, 32, 48 and 64 px that are used consistently across all components to keep the design balanced and organized.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PART 2 — CRITICAL INFRASTRUCTURE -->
+      <div class="glossary-part-header glossary-part-header--red">
+        <i class="fa-solid fa-shield-halved"></i>
+        Part 2 — Conference 2: Critical Infrastructure (Eng. Yanis Stovanel · Ericsson)
+      </div>
+      <div class="table-wrapper">
+        <table class="glossary-table" id="glossaryTable2">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th><i class="fa-solid fa-flag-usa"></i> English Term</th>
+              <th><i class="fa-solid fa-language"></i> Spanish Translation</th>
+              <th><i class="fa-solid fa-circle-info"></i> Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>16</td><td>Critical Infrastructure</td><td>Infraestructura Critica</td><td>The essential systems of a country like telecom networks, power grids, water supply and banking whose disruption would have a severe impact on national security and daily life.</td></tr>
+            <tr><td>17</td><td>Vulnerability</td><td>Vulnerabilidad</td><td>A flaw or weakness in a system, software, network or process that an attacker can exploit to gain unauthorized access or cause damage.</td></tr>
+            <tr><td>18</td><td>CVSS</td><td>Sistema de Puntuacion de Vulnerabilidades</td><td>Common Vulnerability Scoring System — a standard framework for rating how severe a software vulnerability is, using a scale from 0 to 10.</td></tr>
+            <tr><td>19</td><td>KEV Catalog</td><td>Catalogo de Vulnerabilidades Explotadas</td><td>The Known Exploited Vulnerabilities Catalog maintained by CISA. It lists vulnerabilities that are already being actively used by hackers in real attacks.</td></tr>
+            <tr><td>20</td><td>Cyber Adversary</td><td>Adversario Cibernetico</td><td>An individual, group or state-sponsored organization that carries out or finances cyberattacks against systems, networks, companies or countries.</td></tr>
+            <tr><td>21</td><td>Threat Actor</td><td>Actor de Amenaza</td><td>Any person, group or nation responsible for a cyberattack or security incident, ranging from individual hackers to organized criminal groups or governments.</td></tr>
+            <tr><td>22</td><td>Agentic AI</td><td>IA Agéntica</td><td>An AI system that acts autonomously like an agent — it makes its own decisions, plans actions and executes complex tasks to reach a goal without constant human supervision.</td></tr>
+            <tr><td>23</td><td>Autonomous Hacking Agents</td><td>Agentes de Hackeo Autonomo</td><td>AI-powered systems capable of carrying out cyberattacks on their own, without needing a human to control each step. This dramatically increases the speed and scale of attacks.</td></tr>
+            <tr><td>24</td><td>Polymorphic Malware</td><td>Malware Polimorfico</td><td>Malicious software that automatically changes its own code every time it spreads so that traditional antivirus tools have a hard time detecting it.</td></tr>
+            <tr><td>25</td><td>Initial Access Broker (IAB)</td><td>Broker de Acceso Inicial</td><td>A cybercriminal who specializes in breaking into systems and then selling that access to other attackers instead of using it themselves.</td></tr>
+            <tr><td>26</td><td>RaaS (Ransomware as a Service)</td><td>Ransomware como Servicio</td><td>A criminal business model where ransomware developers rent their malware to other criminals who use it to carry out attacks in exchange for a percentage of the ransom collected.</td></tr>
+            <tr><td>27</td><td>Network Governance</td><td>Gobernanza de Redes</td><td>The framework of policies, standards and practices that guide how a country's communication networks are managed, secured and regulated.</td></tr>
+            <tr><td>28</td><td>National Sovereignty</td><td>Soberania Nacional</td><td>In the digital context, this means a country's ability to independently control and defend its own critical digital infrastructure and protect the data of its citizens.</td></tr>
+            <tr><td>29</td><td>Threat Intelligence</td><td>Inteligencia de Amenazas</td><td>Evidence-based information about current or emerging cyberthreats that helps organizations make better decisions about how to defend their systems.</td></tr>
+            <tr><td>30</td><td>Cybersecurity Governance</td><td>Gobernanza de Ciberseguridad</td><td>A proactive strategic approach where cybersecurity decisions are made at the highest levels of government or company leadership instead of being left only to technical teams.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CONCLUSION ==================== -->
+  <section class="section" id="conclusion">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FINAL REFLECTION</span>
+        <h2 class="section-title">Conclusion and Opinion</h2>
+        <p class="section-subtitle">My personal thoughts about what I learned at Colombia 5.0 and how it connects to ethics and professional responsibility.</p>
+      </div>
+      <div class="conclusion-grid">
+        <div class="conclusion-text">
+
+          <h3><i class="fa-solid fa-graduation-cap"></i> What I Learned at Colombia 5.0</h3>
+          <p>Attending Colombia 5.0 was a really valuable experience for me as a software development student. I think the biggest lesson I took home is that building technology is not just about knowing how to code — it is about understanding what problem you are trying to solve and building solutions that are coherent, useful and responsible. The Game UI workshop showed me that even in design, having a clear system of rules matters more than making things look pretty. The Ericsson conference showed me that the systems we build can have real consequences for the security of an entire country.</p>
+
+          <h3><i class="fa-solid fa-building"></i> Why Technology Matters for Businesses</h3>
+          <p>One thing I realized at this event is that companies that use technology strategically are not just more efficient — they are also more competitive, more resilient and better prepared for the future. Cloud computing, automation and data analytics are not luxuries anymore. They are tools that any company needs to survive and grow in today's market. Colombia 5.0 made it clear that Colombia has the talent to lead this transformation, but we need to invest in education, infrastructure and security to make it happen.</p>
+
+          <h3><i class="fa-solid fa-robot"></i> Artificial Intelligence and Its Benefits</h3>
+          <p>A lot of people are afraid of AI because they think it will take their jobs. But what I understood from the event is that AI is more of a tool than a replacement. It can help doctors make better diagnoses, help farmers manage their crops, help teachers personalize education and help companies reduce waste. That said, what the Ericsson conference also showed is that AI can be used for bad things too, like automating cyberattacks. That is why how we develop and regulate AI matters so much.</p>
+
+          <h3><i class="fa-solid fa-lock"></i> Responsible Use of Data</h3>
+          <p>Data is probably the most valuable resource in the digital economy right now. But with that value comes a big responsibility. Companies and governments have to use data in a way that respects people's privacy, gets their informed consent and follows regulations like Colombia's Law 1581. I think as a future developer, one of the most important things I can do is make sure the systems I build protect user data instead of exposing it.</p>
+
+          <h3><i class="fa-solid fa-balance-scale"></i> Ethics in Business Technology</h3>
+          <p>Colombia 5.0 made me think a lot about the ethical side of technology. AI algorithms can reinforce existing inequalities if they are trained on biased data. Systems can be designed to manipulate people instead of helping them. Critical infrastructure can be left unprotected because security was treated as an afterthought. I believe that every technology decision has an ethical dimension, and as future professionals we have to take that seriously. Ethics should not be something we add at the end — it has to be part of the design process from the beginning.</p>
+
+          <h3><i class="fa-solid fa-people-group"></i> Social Impact of Automation</h3>
+          <p>Automation creates a real tension that I think is hard to ignore. On one hand it makes companies more efficient and competitive. On the other hand it displaces workers who do repetitive jobs and do not always have the resources to learn new skills. I think the responsible approach is to invest in retraining programs, design systems that are accessible to everyone and make sure the benefits of automation are shared broadly across society — not just by the companies that implement it.</p>
+
+          <h3><i class="fa-solid fa-code"></i> Professional Responsibility in Software Development</h3>
+          <p>As a software development student, this event made me think about what it really means to be a responsible developer. It is not just about writing code that works — it is about writing code that is clean, documented, secure and ethical. We are building the systems that people and institutions rely on every day. When those systems fail or are misused, there are real consequences for real people. Colombia 5.0 reminded me that the best thing we can do as future developers is take that responsibility seriously from day one.</p>
+
+        </div>
+
+        <div class="conclusion-sidebar">
+          <div class="quote-card">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <blockquote>"The difference between a pretty screen and an interface that works is the discipline of building systems before building pieces."</blockquote>
+            <cite>— Andres Pisso Tobar, Colombia 5.0 · 2026</cite>
+          </div>
+          <div class="quote-card" style="margin-top:1.2rem; border-color:rgba(239,68,68,0.3);">
+            <i class="fa-solid fa-quote-left quote-icon" style="color:#ef4444"></i>
+            <blockquote>"Protecting critical networks is not just a technical challenge — it is a matter of national sovereignty."</blockquote>
+            <cite>— Eng. Yanis Stovanel, Ericsson · Colombia 5.0 · 2026</cite>
+          </div>
+          <div class="ethics-pillars">
+            <h4><i class="fa-solid fa-check-double"></i> Key Ethics I Identified</h4>
+            <ul>
+              <li><i class="fa-solid fa-circle-check"></i> Data privacy</li>
+              <li><i class="fa-solid fa-circle-check"></i> Algorithm transparency</li>
+              <li><i class="fa-solid fa-circle-check"></i> Digital inclusion</li>
+              <li><i class="fa-solid fa-circle-check"></i> Professional responsibility</li>
+              <li><i class="fa-solid fa-circle-check"></i> Technology sustainability</li>
+              <li><i class="fa-solid fa-circle-check"></i> Digital rights and sovereignty</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">COLOMBIA <span>5.0</span></div>
+        <p>Academic website built as part of the Software Analysis and Development program at SENA — Center for Manufacturing in Textiles and Leather, Bogota 2026.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#conferences">Conferences</a></li>
+          <li><a href="#topics">Topics</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#glossary">Glossary</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <h4>Information</h4>
+        <p><i class="fa-solid fa-user"></i> <strong>Student:</strong> Jesus Manuel Arrieta Suarez</p>
+        <p><i class="fa-solid fa-graduation-cap"></i> <strong>Program:</strong> Software Analysis and Development</p>
+        <p><i class="fa-solid fa-building"></i> <strong>Institution:</strong> SENA — Center for Manufacturing in Textiles and Leather</p>
+        <p><i class="fa-solid fa-calendar"></i> <strong>Year:</strong> 2026</p>
+      </div>
+    
+        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Colombia 5.0 — SENA Academic Website &nbsp;|&nbsp; Built with <i class="fa-solid fa-heart" style="color:#e74c3c"></i> using HTML5 · CSS3 · JavaScript</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
